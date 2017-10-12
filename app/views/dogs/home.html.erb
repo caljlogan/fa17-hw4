@@ -1,0 +1,19 @@
+<h1>Hello There! Welcome to homework 4!</h1>
+
+<h1>Cats</h1>
+ <% @cats.each do |cat| %>
+    <%= cat.name %>
+    <br/>
+  <% end %>
+
+<h1>Todos</h1>
+ <% @todos.each do |todo| %>
+    <%= todo.task %>
+    <br/>
+  <% end %>
+
+<h1>Users</h1>
+ <% @users.each do |user| %>
+    <%= "Name: " + user.name + " Age: " + user.age.to_s %>
+    <br/>
+  <% end %>
